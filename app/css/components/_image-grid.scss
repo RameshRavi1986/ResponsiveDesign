@@ -1,0 +1,27 @@
+[class*='image-grid-']{
+  width:100%;
+  display:table;
+
+}
+[class*='image-grid-'] .columns {
+    float: left;
+    min-height: 1px;
+    list-style:none;
+    @include border-box;
+    padding: 0 0.2rem 0 0.2rem;
+    padding: 0 4px 0 4px;
+    display:table-cell;
+}
+
+[class*='image-grid-'] .grid-image{
+    border: 1px solid red;
+    padding: rem-calc(8);
+    padding:8px;
+    width:100%;
+    height:auto;
+}
+@include image-grid-columns(12);
+
+@media #{$breakpoint-small} {
+ @include image-grid-columns(6);
+}

@@ -1,0 +1,32 @@
+.red-header{
+   background-color:$header-background;
+   padding:5px;
+   padding:rem-calc(5);
+   margin:20px 0;
+   margin:rem-calc(20) 0;
+   color: $header-color;
+   width:150px;
+   width:rem-calc(150);
+   height:50px;
+   height: rem-calc(50);
+   @include font-size(2);
+}
+.main-header{
+ color:#fff;
+ font-size:rem-calc(20);
+ font-size:20px;
+ float:left;
+
+}
+@media only screen and (max-width : 320px) {
+ .main-header{
+   clear:both;
+ }
+}
+
+@media only screen and (max-width : 480px) {
+ .main-header{
+   clear:both;
+
+ }
+}

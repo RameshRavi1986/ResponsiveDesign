@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="nocsstransform">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Havas People</title>
+<link rel="stylesheet" type="text/css" href="css/app.min.css"/>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+<![endif]-->
+
+
+</head>
+<body>
+<header class="menu">
+<h1 class="main-header">HAVAS PEOPLE</h1>
+<nav class="clearfix">
+    <ul class="menu-links clearfix">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#" id="pull" class="mobile-menu-link">Menu</a>
+</nav>
+</header>
+<section class="container">
+ <div class="row">
+ <div class="column-12">
+    <h2 class="red-header">About us</h2> 
+	<h3>
+		Whatever people challenges your'e facing, we can help you tackle them head-on through brilliant communication and brand management.
+	</h3>
+    <div class="row">
+             <div class="column-12">Our approach is integrated , covering everything from intially grabbing your audience's attention.</div>
+    </div>
+    <div class="row">
+        <div class="column-6 slidein-animate"><img src="images/image1.png" alt="Our Clients"/></div>
+        <div class="column-6 slidein-animate"><img src="images/image2.png" alt="Great place to work"/></div>
+    </div>
+ </div>
+ </div>
+</section>
+<section class="container">
+ <div class="row">
+ <div class="column-12">
+    <h2 class="red-header">Flickr</h2> 
+	<ul id="flickrContent" class="image-grid-3">
+	</ul>
+</div>
+ </div>
+</section>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
+
+
+</body>
+
+</html>

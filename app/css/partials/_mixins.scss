@@ -1,0 +1,45 @@
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin border-box {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box; 
+}
+
+%clearfix {
+    *zoom: 1;
+    &:before, 
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+
+}
+
+@mixin columns($numberOfColumns) {
+ @for $i from 1 through $numberOfColumns {
+ 
+     .column-#{$i} { 
+         width: 100% / $numberOfColumns * $i;
+     }
+ 
+}
+}
+
+@mixin image-grid-columns($numberOfColumns) {
+ @for $i from 1 through $numberOfColumns {
+ 
+     .image-grid-#{$i} .columns { 
+         width: 100% / $i;
+
+     }
+ 
+}
+}

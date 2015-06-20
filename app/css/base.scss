@@ -1,0 +1,12 @@
+@import 'partials/functions';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/reset';
+
+
+/* Set cof components for page */
+ @import 'components/menus';
+ @import 'components/header';
+ @import 'components/grid';
+ @import 'components/image-grid';
+ @import 'components/animate';

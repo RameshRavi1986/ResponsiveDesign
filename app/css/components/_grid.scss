@@ -1,0 +1,28 @@
+.container,
+.row{
+ @extend %clearfix;
+
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width:$grid-max-width;
+    max-width:1200px;
+}
+[class*='column-'] {
+    float: left;
+    padding: rem-calc(16);
+    padding:16px;
+    width: 100%;
+    min-height: 1px; 
+    @include border-box;
+}
+
+@include columns(12);
+@media #{$breakpoint-small} {
+ @include columns(6);
+}
+@media #{$breakpoint-medium} {
+ @include columns(8);
+
+}

@@ -1,0 +1,29 @@
+$font-stack:Helvetica, sans-serif;
+$primary-color:#9d9d9d;
+
+
+/* Variables for navigation menu */
+
+$nav-background:#333;
+$nav-primarycolor:#fff;
+
+/* variables for header */
+
+$header-background:  #dc022e;
+$header-color: #fff;
+
+/* Variables for body content */
+
+$body-background :#ececec;
+$body-content-color: #9d9d9d;
+$body-header-color:#000;
+
+/* Variables for grid */
+
+$grid-max-width: rem-calc(1200);
+$breakpoint-small: "only screen and (max-width: 320px)";
+$breakpoint-medium: "only screen and (max-width: 480px)";
+
+/* Variables for block-grid */
+
+$image-grid-max-width: rem-calc(1200);

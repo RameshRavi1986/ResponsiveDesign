@@ -1,0 +1,112 @@
+/* css components for menu */
+
+$nav-background:#333;
+$nav-primarycolor:#fff;
+
+.menu {
+  @include font-size(1.2);
+  background-color:$nav-background;
+  height:rem-calc(48);
+  width:100%;
+  font-weight:bold;
+  position:relative;
+  clear:right;
+}
+.menu-links{
+  padding: 0;
+  margin: 0 auto;
+  width: rem-calc(600);
+  width:600px;
+  height: rem-calc(40);
+  height:40px;
+}
+
+.menu-links li{
+  display: inline;
+  float: left;
+}
+
+.menu-links li a{
+  color: $nav-primarycolor;
+  display: inline-block;
+  width: rem-calc(100);
+  width:100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: rem-calc(40);
+  line-height: 40px;
+}
+.mobile-menu-link{
+  display:none;
+}
+
+@media only screen and (max-width : 480px) {
+    .menu {
+        border-bottom: 0;
+	height:auto;
+    }
+    .menu-links {
+        display: none;
+	height:auto;
+    }
+    .menu-links li{
+      clear:both;
+
+    }
+    .mobile-menu-link {
+        display: block;
+        background-color:$nav-background;
+	color: $nav-primarycolor;
+        width: 100%;
+        position: relative;
+    }
+    .mobile-menu-link:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+      	width:30px;
+	width: rem-calc(30);
+       	height:30px;
+	height: rem-calc(30);
+        display: inline-block;
+        position: absolute;
+        right: rem-calc(15);
+	right:15px;
+        top: rem-calc(10);
+	top:10px;
+    }
+}
+@media only screen and (max-width : 320px) {
+    .menu {
+        border-bottom: 0;
+	height:auto;
+    }
+    .menu-links {
+        display: none;
+	height:auto;
+    }
+    .menu-links li{
+      clear:both;
+
+    }
+    .mobile-menu-link {
+        display: block;
+        background-color:$nav-background;
+	color: $nav-primarycolor;
+        width: 100%;
+        position: relative;
+    }
+    .mobile-menu-link:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+      	width:30px;
+	width: rem-calc(30);
+       	height:30px;
+	height: rem-calc(30);
+        display: inline-block;
+        position: absolute;
+        right: rem-calc(15);
+	right:15px;
+        top: rem-calc(10);
+	top:10px;
+    }
+}

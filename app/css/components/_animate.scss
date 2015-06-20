@@ -1,0 +1,39 @@
+.appear-animate{
+    -webkit-animation-name: appear; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: appear;
+    animation-duration: 4s;
+}
+@-webkit-keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes appear {
+    from {opacity: 0;}
+    to {opaacity: 1;}
+}
+
+.slidein-animate{
+    -webkit-animation-name: slidein; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+@-webkit-keyframes slidein {
+    from {margin-left: -1000px;}
+    to {margin-left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes slidein {
+    from {margin-left: -1000px;}
+    to {margin-left: 0px;}
+}
+.flickr-link{
+  transition: all 1s ease-in-out;
+}
+.flickr-link:hover{
+   transform:scale(1.1);
+}
